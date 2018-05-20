@@ -66,7 +66,7 @@ namespace PetApplication.Web.Tests.Controllers
         }
 
         [TestMethod]
-        public void CheckMaleGenderCountAsExpected()
+        public void TestMaleGenderCountAsExpected()
         {
             ////Arrange
             var mock = new Mock<IPetRepository>();
