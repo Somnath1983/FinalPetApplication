@@ -1,0 +1,12 @@
+﻿@model  IEnumerable<PetApplication.Entity.PetResultViewModel>
+
+@foreach (var item in Model)
+{
+    
+        <ul class="pet-header">@item.Gender</ul>
+        foreach (var name in item.PetNames)
+        {
+        <li class="pet-name" />@name
+        }
+    
+}

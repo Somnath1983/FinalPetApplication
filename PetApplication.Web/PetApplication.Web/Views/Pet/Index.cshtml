@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model  IEnumerable<PetApplication.Entity.PetResultViewModel>
+<div class="jumbotron">
+    <h1>Pet Lover Page</h1>
+
+</div>
+
+<div class="body-content">
+    <div class="row">
+        @Html.Partial("_PetNameGenderSort", Model)
+    </div>
+</div>
