@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using PetApplication.Entity;
 using System.Runtime.Caching;
 using System.Net.Http;
@@ -38,7 +35,7 @@ namespace PetApplication.Service
                     }
                     else
                         petOwnerResult = Convert.ToString(cache.Get(Constant.CacheKey));
-                    var settings = new Newtonsoft.Json.JsonSerializerSettings
+                    var settings = new JsonSerializerSettings
                     {
                         NullValueHandling = NullValueHandling.Ignore,
                         MissingMemberHandling = MissingMemberHandling.Ignore
